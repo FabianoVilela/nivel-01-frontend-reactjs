@@ -1,3 +1,8 @@
+/**
+* Estilos globais
+**/
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +11,117 @@
 }
 
 body {
-  background: #f5f5ff;
-  font: 14px sans-serif;
+  font: 400 14px Roboto, sans-serif;
+  background: #e9e9f0;
+  -webkit-font-smoothing: antialiased;
+}
+
+input,
+button,
+textarea {
+  font: 200 14px Roboto, sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+form {
+  background-color: #f0f0f5;
+  padding: 20px;
+  margin: 20px 0px 40px 0px;
+  border-radius: 8px;
+}
+
+form input {
+  width: 100%;
+  height: 45px;
   color: #333;
+  border: 1px solid #dcdce6;
+  border-radius: 8px;
+  padding: 0 16px;
+  margin-bottom: 6px;
+}
+
+form textarea {
+  width: 100%;
+  height: 140px;
+  color: #333;
+  border: 1px solid #dcdce6;
+  border-radius: 8px;
+  padding: 16px 24px;
+  line-height: 24px;
+}
+
+.button {
+  padding: 0 15px;
+  background: #49d8b9;
+  border: 0;
+  border-radius: 8px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 40px;
+  transition: ease 0.2s;
+  margin-top: 30px;
+}
+
+.button:hover {
+  filter: brightness(90%);
+}
+
+.project-container h1 {
+  margin-top: 80px;
+  margin-bottom: 24px;
+  font-size: 3em;
+  color: #36bea1;
+}
+
+/**
+* Estilos componentes projetos
+**/
+.project-container {
+  width: 100%;
+  max-width: 1180px;
+  padding: 0 30px;
+  margin: 32px auto;
+}
+
+.project-container ul {
+  list-style: none;
+}
+
+.project-container ul li {
+  background: #fff;
+  padding: 24px;
+  margin: 14px 0;
+  border-radius: 8px;
+  position: relative;
+}
+
+.project-container ul li button {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  border: 0;
+  background: transparent;
+  transition: opacity 0.2s;
+  color: #a8a8b3;
+  font-size: 19px;
+}
+
+.project-container ul li button:hover {
+  color: #e02041;
+  transition: color 0.3s;
+}
+
+.project-container ul li {
+  color: #737380;
+  line-height: 21px;
+  font-size: 14px;
+}
+
+.project-container ul li strong {
+  color: #49d8b9;
 }
